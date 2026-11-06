@@ -1,15 +1,17 @@
-# Workflow
+# Workflow name
 name: Hello
-# On tells when the workflow should run
-on:
-  workflow_dispatch: 
-# job tells what the workflow should do
 
+# Trigger the workflow manually
+on:
+  workflow_dispatch:
+
+# Jobs to execute
 jobs:
   say-hello:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
+
     steps:
-      - name: say hello to server
-        run: echo "Hello Devops"
+      - name: Say hello to server
+        run: echo "Hello DevOps"
 
 
